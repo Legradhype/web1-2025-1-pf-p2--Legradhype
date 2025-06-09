@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listado de Anuncios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    h1 { text-align: center; }
+    .tarjetas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .tarjeta {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 280px;
+      text-align: center;
+    }
+    .tarjeta img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 600px) {
+      .tarjetas {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Anuncios Disponibles</h1>
+  <div class="tarjetas">
+    <div class="tarjeta">
+      <img src="https://via.placeholder.com/250x150" alt="Producto 1">
+      <h3>Laptop HP 15"</h3>
+      <p>$1200</p>
+      <p>Vendedor: Carlos</p>
+      <a href="detalle-anuncio.html"><button>Ver más</button></a>
+    </div>
+    <div class="tarjeta">
+      <img src="https://via.placeholder.com/250x150" alt="Producto 2">
+      <h3>Teléfono Samsung</h3>
+      <p>$850</p>
+      <p>Vendedor: María</p>
+      <button disabled>Ver más</button>
+    </div>
+    <div class="tarjeta">
+      <img src="https://via.placeholder.com/250x150" alt="Producto 3">
+      <h3>Bicicleta Urbana</h3>
+      <p>$400</p>
+      <p>Vendedor: Juan</p>
+      <button disabled>Ver más</button>
+    </div>
+  </div>
+</body>
+</html>
