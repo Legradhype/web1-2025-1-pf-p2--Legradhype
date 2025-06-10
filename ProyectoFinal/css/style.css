@@ -184,6 +184,7 @@ header {
   font-family: 'Rubik', sans-serif;
   line-height: 1.8;
   color: #333;
+  padding: 0 10px;
 }
 
 
@@ -268,5 +269,16 @@ header {
 
   .btn-vermas {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .bienvenida {
+    padding: 20px 15px;
+    margin: 30px 15px;
+  }
+
+  .bienvenida p {
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
 }
