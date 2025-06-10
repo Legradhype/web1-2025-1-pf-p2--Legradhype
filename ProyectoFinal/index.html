@@ -5,38 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopZone - Inicio</title>
   <link rel="stylesheet" href="css/style.css"> <!-- archivo externo de estilos -->
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
   <script defer src="js/main.js"></script>
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">ShOpZoNe</div>
-      <ul class="menu">
-        <li><a href="#">Categoría</a></li>
-        <li><a href="#">Ayuda</a></li>
-      </ul>
-      <div class="acciones">
-        <button onclick="window.location.href='register.html'">Registrarse</button>
-        <button onclick="window.location.href='login.html'">Iniciar sesión</button>
-     <button onclick="verMas()">➡️</button>
+<header class="barra-encabezado">
+  <nav class="navbar">
+    <div class="logo">ShOpZoNe</div>
+    <ul class="menu">
+      <li><a href="#">Categoría</a></li>
+      <li><a href="#">Ayuda</a></li>
+    </ul>
+    <div class="acciones">
+      <button onclick="window.location.href='register.html'">Registrarse</button>
+      <button onclick="window.location.href='login.html'">Iniciar sesión</button>
+      <button onclick="window.location.href='anuncios.html'" class="btn-vermas">Ver todos los anuncios</button>
+    </div>
+  </nav>
+</header>
 
-      </div>
-    </nav>
-  </header>
 
   <main>
-    <section class="busqueda">
-      <input type="text" id="busqueda" placeholder="Buscador">
-      <button class="boton-lupa" onclick="buscar()"></button>
+   <section class="busqueda-wrapper">
+  <div class="busqueda-box">
+    <input type="text" id="busqueda" placeholder="Buscar productos...">
+    <button class="btn-lupa" onclick="buscar()">
+      <img src="img/lupa.png" alt="Buscar">
+    </button>
+  </div>
+</section>
 
-    </section>
 
-    <section class="bienvenida">
-      <p>
-        En <strong>ShOpZoNe</strong>, conectamos personas que desean vender y comprar productos de manera segura, rápida y sencilla.
-        Somos una plataforma moderna de anuncios clasificados, diseñada para ofrecer una experiencia intuitiva tanto a vendedores como a compradores.
-      </p>
+<section class="bienvenida">
+  <p>
+    En <strong>ShOpZoNe</strong>, conectamos personas que desean vender y comprar productos de manera segura, rápida y sencilla.
+    Somos una plataforma moderna de anuncios clasificados, diseñada para ofrecer una experiencia intuitiva tanto a vendedores como a compradores.
+  </p>
+</section>
+
+
+
     </section>
 
     <section id="destacados">
@@ -50,3 +60,4 @@
 
 </body>
 </html>
+
