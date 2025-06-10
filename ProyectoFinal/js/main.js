@@ -25,7 +25,8 @@ const destacados = [
 
 
 let mostrarDesde = 0;
-const mostrarCantidad = 6;
+const mostrarCantidad = 3; 
+
 
 function cargarDestacados() {
   const contenedor = document.getElementById("tarjetas");
